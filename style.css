@@ -1,41 +1,149 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Soft gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar */
 .navbar {
-    padding: 1rem;
+    background-color: #212529 !important;
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa !important;
+}
+
+/* Section Styling */
 .container {
-    margin-top: 20px;
+    max-width: 1200px;
 }
 
-.list-group-item {
-    cursor: pointer;
+h2 {
+    text-align: center;
+    font-size: 2rem;
     font-weight: bold;
-    background-color: #f4a582;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.profile-section img {
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Resume Section */
+.resume-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #007bff;
     color: white;
-    border: none;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
 }
 
-.list-group-item:hover {
-    background-color: #d6604d;
+.resume-btn:hover {
+    background: #0056b3;
 }
 
-#experience-content {
+/* Experience Section */
+#experience {
+    background: #f8f9fa;
+    padding: 3rem 0;
+    border-radius: 10px;
+}
+
+.experience-btn {
+    background: #e6a67a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.experience-btn:hover,
+.experience-btn.active {
+    background: #cc774a;
+    color: white;
+}
+
+#experience-display {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary, .btn-info {
-    padding: 10px 20px;
+/* Project Section */
+#projects {
+    padding: 3rem 0;
+}
+
+.project-btn {
+    background: #d1e7dd;
+    color: #198754;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
     border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: 0.3s;
+    text-align: left;
 }
 
-.text-danger {
-    font-size: 1.5rem;
+.project-btn:hover,
+.project-btn.active {
+    background: #0f5132;
+    color: white;
+}
+
+#project-display {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background: #212529;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#contact a {
+    color: #17a2b8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #f8f9fa;
 }
