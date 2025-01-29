@@ -1,36 +1,62 @@
-<link rel="stylesheet" href="style.css">
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #222 !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+    padding: 60px 0;
     text-align: center;
-    margin: 50px;
 }
 
-h1 {
-    color: #333;
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
-h2 {
-    color: #555;
-    margin-top: 30px;
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 50px 0;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #ff6600;
-}
-
-.container {
-    background: white;
-    padding: 20px;
+.card {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
 }
