@@ -9,9 +9,14 @@ body {
 /* Navbar Styling */
 .navbar {
     background-color: #222 !important;
+    padding: 15px;
 }
 
-/* Hero Section Styling */
+.navbar a {
+    color: white !important;
+}
+
+/* Hero Section */
 .hero-section {
     background: linear-gradient(to right, #ff9966, #ff5e62);
     color: white;
@@ -19,12 +24,15 @@ body {
     text-align: center;
 }
 
+/* Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Experience Section */
@@ -42,7 +50,7 @@ body {
 .experience-list h5 {
     cursor: pointer;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
@@ -52,68 +60,16 @@ body {
 }
 
 .experience-content {
-    background: #f8f9fa;
-    padding: 20px;
+    background: #ffffff;
+    padding: 25px;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     display: none;
 }
 
-.experience-content h5 {
-    font-weight: bold;
-    color: #dc3545;
-}
-
-.tech-icons {
-    margin-top: 10px;
-}
-
+/* Technology Badges */
 .tech-icons .badge {
     font-size: 14px;
     padding: 8px;
     margin-right: 5px;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-.card {
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Contact Section */
-#contact {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 40px 0;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    .experience-list {
-        text-align: center;
-    }
 }
