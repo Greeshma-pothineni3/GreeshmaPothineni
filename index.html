@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeshma Pothineni | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css"> <!-- Custom Styles -->
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -32,45 +35,122 @@
         <h1 class="fw-bold">Welcome to My Portfolio!</h1>
         <p class="lead">I am <strong>Greeshma Pothineni</strong>, a Data Analyst and Network Infrastructure Enthusiast.</p>
         <p>Check out my projects and experiences below.</p>
-    </div>
 
-    <!-- Resume Section -->
-    <div class="container text-center mt-5">
-        <h2>Resume</h2>
+        <!-- Resume Download -->
+        <h2 class="mt-4">Resume</h2>
         <p><a href="resume.pdf" class="btn btn-info" target="_blank">Download My Resume</a></p>
     </div>
 
     <!-- Experience Section -->
-    <div class="container mt-5">
+    <section id="experience" class="container mt-5">
         <h2 class="text-center">Experience</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="list-group">
-                    <button class="list-group-item list-group-item-action" onclick="showExperience('iconsult')">Data Analyst | iConsult Collaborative</button>
-                    <button class="list-group-item list-group-item-action" onclick="showExperience('accenture')">Cloud Data Analyst | Accenture</button>
-                    <button class="list-group-item list-group-item-action" onclick="showExperience('hcl')">Analyst | HCL Technologies</button>
-                </div>
+                <button class="btn btn-light experience-btn d-block w-100 my-2" data-experience="iConsult">Data Analyst | iConsult Collaborative</button>
+                <button class="btn btn-light experience-btn d-block w-100 my-2" data-experience="Accenture">Cloud Data Analyst | Accenture</button>
+                <button class="btn btn-light experience-btn d-block w-100 my-2" data-experience="HCL">Analyst | HCL Technologies</button>
             </div>
             <div class="col-md-8">
-                <div id="experience-content" class="p-3 border rounded shadow-sm bg-white"></div>
+                <div id="experience-display" class="p-4 border rounded shadow-sm bg-white" style="display: none;">
+                    <h4 id="experience-title" class="text-danger"></h4>
+                    <p id="experience-duration" class="text-muted"></p>
+                    <ul id="experience-details"></ul>
+                    <div id="experience-skills" class="mt-3"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Projects Section -->
-    <div class="container mt-5">
+    <section id="projects" class="container mt-5">
         <h2 class="text-center">Projects</h2>
-        <div class="row" id="projects-container"></div>
-    </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-light project-btn d-block w-100 my-2" data-project="SentimentAnalysis">Sentiment Analysis on Movie Reviews</button>
+                <button class="btn btn-light project-btn d-block w-100 my-2" data-project="RecipeSharing">Recipe Sharing Platform</button>
+                <button class="btn btn-light project-btn d-block w-100 my-2" data-project="DataWarehouse">Data Warehouse for Chinook Dataset</button>
+                <button class="btn btn-light project-btn d-block w-100 my-2" data-project="EnergyAnalysis">Energy Consumption Analysis</button>
+            </div>
+            <div class="col-md-8">
+                <div id="project-display" class="p-4 border rounded shadow-sm bg-white" style="display: none;">
+                    <h4 id="project-title" class="text-success"></h4>
+                    <p id="project-description" class="text-muted"></p>
+                    <ul id="project-details"></ul>
+                    <div id="project-skills" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
-    <div class="container text-center mt-5" id="contact">
-        <h4>Contact Me</h4>
+    <section id="contact" class="container text-center mt-5">
+        <h4 class="mt-4">Contact Me</h4>
         <p>Email: <a href="mailto:greeshmapothineni@gmail.com">greeshmapothineni@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/greeshma-pothineni" class="btn btn-secondary">Connect with me</a></p>
-    </div>
+    </section>
 
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const experiences = {
+                iConsult: {
+                    title: "Data Analyst | iConsult Collaborative",
+                    duration: "Aug 2024 – Present | Syracuse, NY",
+                    details: [
+                        "Developed automated workflows and dashboards in Power BI and Tableau.",
+                        "Enhanced data accessibility for 50+ users.",
+                        "Optimized ETL processes for high data accuracy.",
+                        "Analyzed large datasets to improve business strategies.",
+                        "Worked with SQL databases for efficient ETL."
+                    ],
+                    skills: ["SQL", "Power BI", "Tableau", "ETL"]
+                },
+                Accenture: {
+                    title: "Cloud Data Analyst | Accenture",
+                    duration: "Jan 2022 – July 2024 | Hyderabad, India",
+                    details: [
+                        "Designed cloud data pipelines using AWS and Azure.",
+                        "Developed Tableau dashboards for real-time reporting.",
+                        "Integrated ML models for operational efficiency.",
+                        "Led data storage cost optimization by 30%.",
+                        "Automated reporting processes for improved insights."
+                    ],
+                    skills: ["AWS", "Azure", "Tableau", "Snowflake", "ETL"]
+                },
+                HCL: {
+                    title: "Analyst | HCL Technologies",
+                    duration: "June 2020 – Dec 2021 | Bangalore, India",
+                    details: [
+                        "Implemented network security improvements.",
+                        "Developed automation scripts using Python.",
+                        "Configured cloud-based deployments.",
+                        "Optimized SQL-based business intelligence reports.",
+                        "Provided L2 support for enterprise applications."
+                    ],
+                    skills: ["Python", "SQL", "Cloud Infrastructure", "Networking"]
+                }
+            };
+
+            function displayExperience(expKey) {
+                const exp = experiences[expKey];
+                if (exp) {
+                    document.getElementById("experience-display").style.display = "block";
+                    document.getElementById("experience-title").textContent = exp.title;
+                    document.getElementById("experience-duration").textContent = exp.duration;
+                    document.getElementById("experience-details").innerHTML = exp.details.map(detail => `<li>${detail}</li>`).join("");
+                    document.getElementById("experience-skills").innerHTML = exp.skills.map(skill => `<span class="badge bg-primary me-1">${skill}</span>`).join("");
+                }
+            }
+
+            document.querySelectorAll(".experience-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    displayExperience(this.getAttribute("data-experience"));
+                });
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
