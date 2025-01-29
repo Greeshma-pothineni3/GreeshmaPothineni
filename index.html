@@ -54,7 +54,7 @@
         </div>
         <div class="col-md-8">
             <div id="experience-content" class="experience-details">
-                <!-- Experience details will be displayed here -->
+                <p>Select an experience to see details.</p>
             </div>
         </div>
     </div>
@@ -103,24 +103,27 @@
                 <h3 class="text-danger">Cloud Data Analyst | Accenture</h3>
                 <p><strong>Feb 2022 – July 2023 | Bangalore, India</strong></p>
                 <ul>
-                    <li>Streamlined data storage for 1,000+ users on Azure.</li>
-                    <li>Optimized Azure SQL databases, achieving 30% faster retrieval.</li>
+                    <li>Optimized and streamlined data storage for 1,000+ users on Azure cloud.</li>
+                    <li>Improved cloud database performance, reducing query retrieval times by 30%.</li>
+                    <li>Automated ETL processes, enhancing data consistency and reliability.</li>
                     <li>Integrated Salesforce with Databricks, improving CRM workflows.</li>
-                    <li>Configured Azure Active Directory for secure identity management.</li>
+                    <li>Configured Azure Active Directory for seamless identity management.</li>
                 </ul>
             `,
             "hcl": `
                 <h3 class="text-danger">Analyst | HCL Technologies</h3>
                 <p><strong>Oct 2020 – Feb 2022 | Chennai, India</strong></p>
                 <ul>
-                    <li>Managed routers, switches, VLANs, and subnetting for efficient data flow.</li>
-                    <li>Implemented advanced firewall rules and VPN setups.</li>
-                    <li>Built ETL pipelines, reducing manual effort by 20%.</li>
-                    <li>Created Power BI and Tableau dashboards for real-time analytics.</li>
+                    <li>Managed routers, switches, VLANs, and subnetting for optimized network flow.</li>
+                    <li>Implemented advanced firewall configurations and VPNs for secure data access.</li>
+                    <li>Developed automated ETL pipelines, reducing manual intervention by 20%.</li>
+                    <li>Designed Power BI dashboards for data visualization and analysis.</li>
+                    <li>Provided technical training and documentation for new employees.</li>
                 </ul>
             `
         };
-        document.getElementById("experience-content").innerHTML = experiences[exp];
+
+        document.getElementById("experience-content").innerHTML = experiences[exp] || "<p>Experience details not found.</p>";
     }
 </script>
 
