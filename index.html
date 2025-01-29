@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css"> <!-- Custom CSS -->
 </head>
 <body>
 
@@ -30,17 +30,15 @@
     </nav>
 
     <!-- About Section -->
-    <div class="container text-center mt-5">
-        <img src="profile.jpg" alt="Greeshma Pothineni" width="150" class="rounded-circle mb-3">
-        <h1 class="fw-bold">Hello, I'm Greeshma Pothineni! 👋</h1>
-        <p class="lead">I'm a Graduate student at Syracuse University 🍊🧡 pursuing a Master's degree in Information Systems.</p>
-        <p>I'm a Data Analyst & Network Infrastructure Enthusiast with 3+ years of experience in data analytics, cloud-based processing, and business intelligence.</p>
+    <section id="about" class="container text-center mt-5">
+        <h1>Welcome to My Portfolio!</h1>
+        <p class="lead">Hello, I'm <strong>Greeshma Pothineni</strong>!!! 👋</p>
+        <p>I'm a Graduate student at Syracuse University 🍊🧡 pursuing a Master's degree in Information Systems.</p>
+        <p>I'm a <strong>Data Analyst & Network Infrastructure Enthusiast</strong> with 3+ years of experience in data analytics, cloud-based processing, and business intelligence.</p>
         <p>I'm committed to constant learning and growth, exploring new technologies to stay ahead in the dynamic world of technology.</p>
-
-        <!-- Resume Download -->
-        <h2 class="mt-4">Resume</h2>
-        <p><a href="resume.pdf" class="btn btn-info" target="_blank">Download My Resume</a></p>
-    </div>
+        <h3>Resume</h3>
+        <a href="resume.pdf" class="btn btn-primary" target="_blank">Download My Resume</a>
+    </section>
 
     <!-- Experience Section -->
     <section id="experience" class="container mt-5">
@@ -56,7 +54,8 @@
                     <h4 id="experience-title" class="text-danger"></h4>
                     <p id="experience-duration" class="text-muted"></p>
                     <ul id="experience-details"></ul>
-                    <p><strong>Skills:</strong> <span id="experience-skills"></span></p>
+                    <h5 class="mt-3">Skills:</h5>
+                    <ul id="experience-skills"></ul>
                 </div>
             </div>
         </div>
@@ -77,8 +76,10 @@
             <div class="col-md-8">
                 <div id="project-display" class="p-4 border rounded shadow-sm bg-white" style="display: none;">
                     <h4 id="project-title" class="text-success"></h4>
+                    <p id="project-description" class="text-muted"></p>
                     <ul id="project-details"></ul>
-                    <p><strong>Skills:</strong> <span id="project-skills"></span></p>
+                    <h5 class="mt-3">Skills:</h5>
+                    <ul id="project-skills"></ul>
                 </div>
             </div>
         </div>
@@ -87,8 +88,8 @@
     <!-- Contact Section -->
     <section id="contact" class="container text-center mt-5">
         <h4 class="mt-4">Contact Me</h4>
-        <p>📧 <a href="mailto:greeshmapothineni@gmail.com">greeshmapothineni@gmail.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/greeshma-pothineni" target="_blank">LinkedIn Profile</a></p>
+        <p>Email: <a href="mailto:greeshmapothineni@gmail.com">greeshmapothineni@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/greeshma-pothineni" class="btn btn-secondary" target="_blank">Connect with me</a></p>
     </section>
 
     <!-- JavaScript -->
