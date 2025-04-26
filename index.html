@@ -204,20 +204,51 @@
             },
             "RecipeSharing": {
                 title: "Recipe Sharing Platform",
-                description: "A platform where users can share and discover recipes. It allows users to upload recipes, rate them, and interact with other food lovers.",
+                description: "A platform where users can share and explore recipes.",
                 details: [
-                    "Used HTML, CSS, JavaScript for front-end development.",
-                    "Implemented a REST API for back-end services using Node.js.",
-                    "Deployed on Heroku and used a MongoDB database."
+                    "Developed using Python and Django.",
+                    "Implemented user authentication and recipe submission.",
+                    "Integrated a recommendation system."
                 ],
-                skills: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB", "Heroku"]
+                skills: ["Python", "Django", "SQL", "Machine Learning"]
             }
-            // Add additional project objects as needed
+            // Add other projects here...
         };
 
-        // Function to show project details
-        const projectButtons = document.querySelectorAll('.project-btn');
-        const projectDisplay = document.getElementById('project-display');
-        const projectTitle = document.getElementById('project-title');
-        const projectDescription = document.getElementById('project-description');
-       
+        // Listen for button clicks
+        document.querySelectorAll('.project-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const projectKey = this.getAttribute('data-project');
+                const project = projects[projectKey];
+
+                // Update the project display
+                document.getElementById('project-title').textContent = project.title;
+                document.getElementById('project-description').textContent = project.description;
+                
+                const detailsList = document.getElementById('project-details');
+                detailsList.innerHTML = '';  // Clear existing details
+                project.details.forEach(detail => {
+                    const li = document.createElement('li');
+                    li.textContent = detail;
+                    detailsList.appendChild(li);
+                });
+
+                const skillsList = document.getElementById('project-skills');
+                skillsList.innerHTML = '';  // Clear existing skills
+                project.skills.forEach(skill => {
+                    const li = document.createElement('li');
+                    li.textContent = skill;
+                    skillsList.appendChild(li);
+                });
+
+                // Show the project details
+                document.getElementById('project-display').style.display = 'block';
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
