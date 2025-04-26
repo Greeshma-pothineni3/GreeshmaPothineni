@@ -192,28 +192,137 @@
     <script>
         // Project data
         const projects = {
-            "SentimentAnalysis": {
-                title: "Sentiment Analysis on Movie Reviews",
-                description: "This project involves analyzing movie reviews to determine the sentiment (positive/negative) using NLP techniques.",
-                details: [
-                    "Used Python for data cleaning and text preprocessing.",
-                    "Applied machine learning models for sentiment analysis.",
-                    "Deployed the model using Flask for a web app interface."
-                ],
-                skills: ["Python", "NLP", "Machine Learning", "Flask"]
-            },
-            "RecipeSharing": {
-                title: "Recipe Sharing Platform",
-                description: "A platform where users can share and explore recipes.",
-                details: [
-                    "Developed using Python and Django.",
-                    "Implemented user authentication and recipe submission.",
-                    "Integrated a recommendation system."
-                ],
-                skills: ["Python", "Django", "SQL", "Machine Learning"]
-            }
-            // Add other projects here...
-        };
+  "SentimentAnalysis": {
+    "title": "Sentiment Analysis on Movie Reviews",
+    "description": "Classified movie review phrases into five sentiment categories (negative to positive) using the Rotten Tomatoes dataset.",
+    "details": [
+      "Conducted sentiment analysis using advanced preprocessing techniques, including tokenization, stopword removal, and negation handling.",
+      "Engineered features like Bag-of-Words, bigrams, and sentiment lexicons (e.g., AFINN, LIWC).",
+      "Implemented machine learning models like Logistic Regression, Naïve Bayes, and Gradient Boosting, achieving an accuracy of 62% with Logistic Regression.",
+      "Evaluated model performance using precision, recall, F1-score, and cross-validation, addressing challenges like class imbalance and sparse data representation."
+    ],
+    "skills": [
+      "Natural Language Processing (NLP)", 
+      "Python", 
+      "NLTK", 
+      "Scikit-Learn", 
+      "Feature Engineering", 
+      "Machine Learning", 
+      "Data Preprocessing", 
+      "Logistic Regression", 
+      "Gradient Boosting", 
+      "Sentiment Analysis"
+    ]
+  },
+  "RecipeSharing": {
+    "title": "Recipe Sharing Platform",
+    "description": "Designed a cloud-based platform for users to share, save, and explore recipes, enabling efficient meal planning and grocery list generation.",
+    "details": [
+      "Created user accounts and authentication features for secure login and personalized experience.",
+      "Developed recipe exploration features with detailed ingredients and cooking instructions.",
+      "Implemented personalized recommendations based on user feedback and interactions.",
+      "Utilized AWS EC2 for backend hosting and Azure Blob Storage for image and data storage.",
+      "Integrated Power Apps with Azure SQL Database for seamless data interactions and Power BI for interactive visualizations."
+    ],
+    "skills": [
+      "Azure SQL Database", 
+      "Azure Blob Storage", 
+      "Amazon S3", 
+      "Microsoft Power Apps", 
+      "Microsoft Power BI", 
+      "Data Analytics and Visualization"
+    ]
+  },
+  "DataWarehouseChinook": {
+    "title": "Data Warehouse Implementation for Chinook Dataset",
+    "description": "Transformed the Chinook dataset into a data warehouse to enhance data management and analytics using Snowflake and Power BI.",
+    "details": [
+      "Designed dimensional models and developed ETL workflows for efficient data migration.",
+      "Utilized Snowflake for data warehousing and dbt for data transformation.",
+      "Integrated the Snowflake data warehouse with Power BI to create interactive dashboards for analytics and reporting.",
+      "Achieved enhanced data storage, improved accessibility, and advanced analytical capabilities."
+    ],
+    "skills": [
+      "Microsoft Excel", 
+      "Microsoft Power BI", 
+      "Snowflake", 
+      "dbt cloud", 
+      "Kimball Methodologies", 
+      "Extract, Transform, Load (ETL)", 
+      "Data Warehousing"
+    ]
+  },
+  "EnergyConsumption": {
+    "title": "Energy Consumption Analysis and Prediction with Shiny App",
+    "description": "Developed a predictive model and Shiny app to analyze and forecast energy consumption variations for residential areas.",
+    "details": [
+      "Cleaned and merged large-scale datasets, including house data, weather data, and energy usage.",
+      "Built a linear regression model with an R² value of 89.85% to predict energy consumption.",
+      "Developed an interactive Shiny app to visualize energy usage patterns and provide insights for energy demand management.",
+      "Achieved an R-squared accuracy of 90.25% and a Mean Absolute Percentage Error (MAPE) of 14.25%."
+    ],
+    "skills": [
+      "R", 
+      "Shiny", 
+      "Linear Regression", 
+      "Data Analysis", 
+      "Predictive Modeling", 
+      "Data Preprocessing"
+    ]
+  },
+  "KitchenChronicle": {
+    "title": "Kitchen Chronicle",
+    "description": "Developed a food database management system, enabling users to discover, explore, and analyze recipes, foods, and cuisines.",
+    "details": [
+      "Created a comprehensive food database for users to explore and rate recipes.",
+      "Implemented personalized recommendations based on user preferences and interactions.",
+      "Integrated Microsoft Power Apps, SQL Database, and Power BI for a seamless experience and data insights.",
+      "Used data analysis and database management systems to create a robust and scalable platform."
+    ],
+    "skills": [
+      "Microsoft Power Apps", 
+      "SQL Database", 
+      "Data Analysis", 
+      "Microsoft Power BI", 
+      "Database Management Systems (DBMS)"
+    ]
+  },
+ {
+  "NeuralaAI": {
+    "title": "Neurala AI Visual Inspection Software Implementation at Floyd Furniture",
+    "description": "Integrated Neurala AI VIA software with Salesforce for quality inspection of Floyd Furniture products.",
+    "details": [
+      "Coordinated the integration of AI inspection software for product quality checks.",
+      "Implemented AI-driven inspections for fasteners and surface finishes in product lines.",
+      "Conducted staff training on the new AI inspection software.",
+      "Managed hybrid project management using Agile sprints for efficient delivery."
+    ],
+    "skills": [
+      "AI Integration", 
+      "Salesforce", 
+      "Quality Management", 
+      "Agile Project Management", 
+      "Training and Support"
+    ]
+  },
+  "StudyBuddy": {
+    "title": "Study Buddy App",
+    "description": "Developed an app to help students create study schedules, track progress, and set reminders for upcoming exams.",
+    "details": [
+      "Created a mobile app that provides users with a platform to organize their study sessions.",
+      "Integrated features such as calendar scheduling, to-do lists, and progress tracking.",
+      "Implemented push notifications to remind users of upcoming study sessions and exams.",
+      "Utilized a simple and intuitive user interface to ensure a seamless user experience."
+    ],
+    "skills": [
+      "Mobile App Development", 
+      "User Interface Design", 
+      "Notification System", 
+      "Time Management", 
+      "Software Development"
+    ]
+  }
+}
 
         // Listen for button clicks
         document.querySelectorAll('.project-btn').forEach(button => {
