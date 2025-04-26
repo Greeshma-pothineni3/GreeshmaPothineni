@@ -199,71 +199,78 @@
                 "details": [
                     "Conducted sentiment analysis using advanced NLP techniques.",
                     "Used Python libraries: NLTK and Scikit-learn.",
-                    "Implemented machine learning models for classification."
+                    "Implemented machine learning models for classification.",
+                    "Visualized the sentiment distribution across various movie genres."
                 ],
                 "skills": ["Python", "Natural Language Processing", "Machine Learning", "NLTK", "Scikit-learn"]
             },
             "RecipeSharing": {
                 "title": "Recipe Sharing Platform",
-                "description": "Developed a web-based platform for sharing and discovering recipes, allowing users to post, rate, and recommend dishes.",
+                "description": "Developed a web-based platform for sharing and discovering recipes, allowing users to post, rate, and comment on recipes.",
                 "details": [
-                    "Built using React, Node.js, and MongoDB.",
-                    "Incorporated a user rating system.",
-                    "Enabled personalized recipe recommendations."
+                    "Developed a user-friendly front-end interface using HTML, CSS, and JavaScript.",
+                    "Implemented dynamic recipe storage and retrieval with MySQL.",
+                    "Integrated rating system for user feedback on recipes.",
+                    "Optimized search functionality to find recipes based on ingredients."
                 ],
-                "skills": ["React", "Node.js", "MongoDB", "JavaScript", "Web Development"]
+                "skills": ["HTML", "CSS", "JavaScript", "MySQL", "PHP"]
             },
             "DataWarehouse": {
                 "title": "Data Warehouse for Chinook Dataset",
-                "description": "Created a data warehouse solution for Chinook, a sample music store database, using Microsoft SQL Server.",
+                "description": "Created a data warehouse model for the Chinook music store dataset, focusing on enhancing data accessibility and analysis.",
                 "details": [
-                    "Built an ETL pipeline to transform and load data.",
-                    "Developed dimensional models and fact tables.",
-                    "Used SSIS for data integration and automation."
+                    "Built an ETL pipeline to extract, transform, and load data into a data warehouse.",
+                    "Implemented complex SQL queries to analyze sales trends and customer behavior.",
+                    "Designed data cubes for multi-dimensional analysis.",
+                    "Developed a dashboard using Power BI for data visualization."
                 ],
-                "skills": ["SQL", "ETL", "Data Warehousing", "SSIS"]
+                "skills": ["SQL", "Data Warehousing", "ETL", "Power BI"]
             },
             "EnergyAnalysis": {
                 "title": "Energy Consumption Analysis",
-                "description": "Analyzed energy consumption patterns using public data, identifying opportunities for efficiency improvements.",
+                "description": "Performed a comprehensive analysis of energy consumption patterns for a utility company, using historical data to predict future trends.",
                 "details": [
-                    "Utilized Python and Pandas for data cleaning and visualization.",
-                    "Created interactive dashboards in Tableau.",
-                    "Identified trends in energy usage across various sectors."
+                    "Analyzed large-scale energy consumption data from various geographic regions.",
+                    "Built time series models for energy consumption forecasting.",
+                    "Identified key factors influencing energy usage patterns.",
+                    "Presented findings using interactive charts and graphs."
                 ],
-                "skills": ["Python", "Pandas", "Data Visualization", "Tableau"]
+                "skills": ["Python", "Pandas", "Time Series Analysis", "Data Visualization"]
             },
             "KitchenChronicle": {
                 "title": "Kitchen Chronicle",
-                "description": "Developed a food database management system for users to discover and explore recipes, track favorites, and rate dishes.",
+                "description": "Created a food database management system to help users explore recipes, discover cuisines, and track favorite dishes.",
                 "details": [
-                    "Utilized Microsoft Power Apps and Power BI.",
-                    "Built a responsive UI for seamless user experience.",
-                    "Developed backend data management using SQL."
+                    "Engineered a comprehensive food database for recipe and ingredient management.",
+                    "Implemented advanced search features for discovering dishes based on preferences.",
+                    "Utilized Microsoft Power Apps for seamless integration with backend systems.",
+                    "Developed real-time recipe suggestion algorithms."
                 ],
-                "skills": ["Microsoft Power Apps", "Power BI", "SQL", "Database Management"]
+                "skills": ["SQL", "Database Management", "Power BI", "Microsoft Power Apps"]
             },
             "StudyBuddy": {
                 "title": "Study Buddy Matching System",
-                "description": "Created an algorithm to match students based on their subjects and availability, promoting collaborative learning.",
+                "description": "Developed a platform to match students based on study preferences, course enrollment, and learning styles.",
                 "details": [
-                    "Developed in Python using Flask for web hosting.",
-                    "Implemented matching algorithms for optimal pairings.",
-                    "Incorporated a simple front-end interface."
+                    "Designed and implemented a student profile matching algorithm based on shared interests.",
+                    "Created a web-based user interface for student interaction and profile management.",
+                    "Used a MySQL database for storing student information and study preferences.",
+                    "Integrated real-time chat functionality for study group collaboration."
                 ],
-                "skills": ["Python", "Flask", "Algorithm Development", "Web Development"]
+                "skills": ["Python", "MySQL", "JavaScript", "Web Development"]
             }
         };
 
-        // Event listener for project buttons
-        document.querySelectorAll('.project-btn').forEach(button => {
+        // Display project details
+        const projectButtons = document.querySelectorAll('.project-btn');
+        projectButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const projectKey = button.getAttribute('data-project');
                 const project = projects[projectKey];
-
+                
                 document.getElementById('project-title').innerText = project.title;
                 document.getElementById('project-description').innerText = project.description;
-
+                
                 const detailsList = document.getElementById('project-details');
                 detailsList.innerHTML = '';
                 project.details.forEach(detail => {
@@ -271,7 +278,7 @@
                     listItem.innerText = detail;
                     detailsList.appendChild(listItem);
                 });
-
+                
                 const skillsList = document.getElementById('project-skills');
                 skillsList.innerHTML = '';
                 project.skills.forEach(skill => {
@@ -285,6 +292,5 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
