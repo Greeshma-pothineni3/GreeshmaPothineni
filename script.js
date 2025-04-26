@@ -10,7 +10,7 @@ const projectData = {
             "Implemented machine learning models, including Logistic Regression, Naïve Bayes, and Gradient Boosting, achieving an accuracy of 62% with Logistic Regression.",
             "Evaluated model performance using precision, recall, F1-score, and cross-validation, addressing challenges like class imbalance and sparse data representation."
         ],
-        skills: [
+        skills: [ 
             "Natural Language Processing (NLP)",
             "Python (Programming Language)",
             "NLTK",
