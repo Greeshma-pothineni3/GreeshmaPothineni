@@ -189,175 +189,102 @@
         <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/greeshma-pothineni" target="_blank">Connect with me</a></p>
     </section>
 
+    <!-- JavaScript -->
     <script>
         // Project data
         const projects = {
-  "SentimentAnalysis": {
-    "title": "Sentiment Analysis on Movie Reviews",
-    "description": "Classified movie review phrases into five sentiment categories (negative to positive) using the Rotten Tomatoes dataset.",
-    "details": [
-      "Conducted sentiment analysis using advanced preprocessing techniques, including tokenization, stopword removal, and negation handling.",
-      "Engineered features like Bag-of-Words, bigrams, and sentiment lexicons (e.g., AFINN, LIWC).",
-      "Implemented machine learning models like Logistic Regression, Naïve Bayes, and Gradient Boosting, achieving an accuracy of 62% with Logistic Regression.",
-      "Evaluated model performance using precision, recall, F1-score, and cross-validation, addressing challenges like class imbalance and sparse data representation."
-    ],
-    "skills": [
-      "Natural Language Processing (NLP)", 
-      "Python", 
-      "NLTK", 
-      "Scikit-Learn", 
-      "Feature Engineering", 
-      "Machine Learning", 
-      "Data Preprocessing", 
-      "Logistic Regression", 
-      "Gradient Boosting", 
-      "Sentiment Analysis"
-    ]
-  },
-  "RecipeSharing": {
-    "title": "Recipe Sharing Platform",
-    "description": "Designed a cloud-based platform for users to share, save, and explore recipes, enabling efficient meal planning and grocery list generation.",
-    "details": [
-      "Created user accounts and authentication features for secure login and personalized experience.",
-      "Developed recipe exploration features with detailed ingredients and cooking instructions.",
-      "Implemented personalized recommendations based on user feedback and interactions.",
-      "Utilized AWS EC2 for backend hosting and Azure Blob Storage for image and data storage.",
-      "Integrated Power Apps with Azure SQL Database for seamless data interactions and Power BI for interactive visualizations."
-    ],
-    "skills": [
-      "Azure SQL Database", 
-      "Azure Blob Storage", 
-      "Amazon S3", 
-      "Microsoft Power Apps", 
-      "Microsoft Power BI", 
-      "Data Analytics and Visualization"
-    ]
-  },
-  "DataWarehouseChinook": {
-    "title": "Data Warehouse Implementation for Chinook Dataset",
-    "description": "Transformed the Chinook dataset into a data warehouse to enhance data management and analytics using Snowflake and Power BI.",
-    "details": [
-      "Designed dimensional models and developed ETL workflows for efficient data migration.",
-      "Utilized Snowflake for data warehousing and dbt for data transformation.",
-      "Integrated the Snowflake data warehouse with Power BI to create interactive dashboards for analytics and reporting.",
-      "Achieved enhanced data storage, improved accessibility, and advanced analytical capabilities."
-    ],
-    "skills": [
-      "Microsoft Excel", 
-      "Microsoft Power BI", 
-      "Snowflake", 
-      "dbt cloud", 
-      "Kimball Methodologies", 
-      "Extract, Transform, Load (ETL)", 
-      "Data Warehousing"
-    ]
-  },
-  "EnergyConsumption": {
-    "title": "Energy Consumption Analysis and Prediction with Shiny App",
-    "description": "Developed a predictive model and Shiny app to analyze and forecast energy consumption variations for residential areas.",
-    "details": [
-      "Cleaned and merged large-scale datasets, including house data, weather data, and energy usage.",
-      "Built a linear regression model with an R² value of 89.85% to predict energy consumption.",
-      "Developed an interactive Shiny app to visualize energy usage patterns and provide insights for energy demand management.",
-      "Achieved an R-squared accuracy of 90.25% and a Mean Absolute Percentage Error (MAPE) of 14.25%."
-    ],
-    "skills": [
-      "R", 
-      "Shiny", 
-      "Linear Regression", 
-      "Data Analysis", 
-      "Predictive Modeling", 
-      "Data Preprocessing"
-    ]
-  },
-  "KitchenChronicle": {
-    "title": "Kitchen Chronicle",
-    "description": "Developed a food database management system, enabling users to discover, explore, and analyze recipes, foods, and cuisines.",
-    "details": [
-      "Created a comprehensive food database for users to explore and rate recipes.",
-      "Implemented personalized recommendations based on user preferences and interactions.",
-      "Integrated Microsoft Power Apps, SQL Database, and Power BI for a seamless experience and data insights.",
-      "Used data analysis and database management systems to create a robust and scalable platform."
-    ],
-    "skills": [
-      "Microsoft Power Apps", 
-      "SQL Database", 
-      "Data Analysis", 
-      "Microsoft Power BI", 
-      "Database Management Systems (DBMS)"
-    ]
-  },
- {
-  "NeuralaAI": {
-    "title": "Neurala AI Visual Inspection Software Implementation at Floyd Furniture",
-    "description": "Integrated Neurala AI VIA software with Salesforce for quality inspection of Floyd Furniture products.",
-    "details": [
-      "Coordinated the integration of AI inspection software for product quality checks.",
-      "Implemented AI-driven inspections for fasteners and surface finishes in product lines.",
-      "Conducted staff training on the new AI inspection software.",
-      "Managed hybrid project management using Agile sprints for efficient delivery."
-    ],
-    "skills": [
-      "AI Integration", 
-      "Salesforce", 
-      "Quality Management", 
-      "Agile Project Management", 
-      "Training and Support"
-    ]
-  },
-  "StudyBuddy": {
-    "title": "Study Buddy App",
-    "description": "Developed an app to help students create study schedules, track progress, and set reminders for upcoming exams.",
-    "details": [
-      "Created a mobile app that provides users with a platform to organize their study sessions.",
-      "Integrated features such as calendar scheduling, to-do lists, and progress tracking.",
-      "Implemented push notifications to remind users of upcoming study sessions and exams.",
-      "Utilized a simple and intuitive user interface to ensure a seamless user experience."
-    ],
-    "skills": [
-      "Mobile App Development", 
-      "User Interface Design", 
-      "Notification System", 
-      "Time Management", 
-      "Software Development"
-    ]
-  }
-}
+            "SentimentAnalysis": {
+                "title": "Sentiment Analysis on Movie Reviews",
+                "description": "Classified movie review phrases into five sentiment categories (negative to positive) using the Rotten Tomatoes dataset.",
+                "details": [
+                    "Conducted sentiment analysis using advanced NLP techniques.",
+                    "Used Python libraries: NLTK and Scikit-learn.",
+                    "Implemented machine learning models for classification."
+                ],
+                "skills": ["Python", "Natural Language Processing", "Machine Learning", "NLTK", "Scikit-learn"]
+            },
+            "RecipeSharing": {
+                "title": "Recipe Sharing Platform",
+                "description": "Developed a web-based platform for sharing and discovering recipes, allowing users to post, rate, and recommend dishes.",
+                "details": [
+                    "Built using React, Node.js, and MongoDB.",
+                    "Incorporated a user rating system.",
+                    "Enabled personalized recipe recommendations."
+                ],
+                "skills": ["React", "Node.js", "MongoDB", "JavaScript", "Web Development"]
+            },
+            "DataWarehouse": {
+                "title": "Data Warehouse for Chinook Dataset",
+                "description": "Created a data warehouse solution for Chinook, a sample music store database, using Microsoft SQL Server.",
+                "details": [
+                    "Built an ETL pipeline to transform and load data.",
+                    "Developed dimensional models and fact tables.",
+                    "Used SSIS for data integration and automation."
+                ],
+                "skills": ["SQL", "ETL", "Data Warehousing", "SSIS"]
+            },
+            "EnergyAnalysis": {
+                "title": "Energy Consumption Analysis",
+                "description": "Analyzed energy consumption patterns using public data, identifying opportunities for efficiency improvements.",
+                "details": [
+                    "Utilized Python and Pandas for data cleaning and visualization.",
+                    "Created interactive dashboards in Tableau.",
+                    "Identified trends in energy usage across various sectors."
+                ],
+                "skills": ["Python", "Pandas", "Data Visualization", "Tableau"]
+            },
+            "KitchenChronicle": {
+                "title": "Kitchen Chronicle",
+                "description": "Developed a food database management system for users to discover and explore recipes, track favorites, and rate dishes.",
+                "details": [
+                    "Utilized Microsoft Power Apps and Power BI.",
+                    "Built a responsive UI for seamless user experience.",
+                    "Developed backend data management using SQL."
+                ],
+                "skills": ["Microsoft Power Apps", "Power BI", "SQL", "Database Management"]
+            },
+            "StudyBuddy": {
+                "title": "Study Buddy Matching System",
+                "description": "Created an algorithm to match students based on their subjects and availability, promoting collaborative learning.",
+                "details": [
+                    "Developed in Python using Flask for web hosting.",
+                    "Implemented matching algorithms for optimal pairings.",
+                    "Incorporated a simple front-end interface."
+                ],
+                "skills": ["Python", "Flask", "Algorithm Development", "Web Development"]
+            }
+        };
 
-        // Listen for button clicks
+        // Event listener for project buttons
         document.querySelectorAll('.project-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const projectKey = this.getAttribute('data-project');
+            button.addEventListener('click', () => {
+                const projectKey = button.getAttribute('data-project');
                 const project = projects[projectKey];
 
-                // Update the project display
-                document.getElementById('project-title').textContent = project.title;
-                document.getElementById('project-description').textContent = project.description;
-                
+                document.getElementById('project-title').innerText = project.title;
+                document.getElementById('project-description').innerText = project.description;
+
                 const detailsList = document.getElementById('project-details');
-                detailsList.innerHTML = '';  // Clear existing details
+                detailsList.innerHTML = '';
                 project.details.forEach(detail => {
-                    const li = document.createElement('li');
-                    li.textContent = detail;
-                    detailsList.appendChild(li);
+                    const listItem = document.createElement('li');
+                    listItem.innerText = detail;
+                    detailsList.appendChild(listItem);
                 });
 
                 const skillsList = document.getElementById('project-skills');
-                skillsList.innerHTML = '';  // Clear existing skills
+                skillsList.innerHTML = '';
                 project.skills.forEach(skill => {
-                    const li = document.createElement('li');
-                    li.textContent = skill;
-                    skillsList.appendChild(li);
+                    const listItem = document.createElement('li');
+                    listItem.innerText = skill;
+                    skillsList.appendChild(listItem);
                 });
 
-                // Show the project details
                 document.getElementById('project-display').style.display = 'block';
             });
         });
     </script>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
